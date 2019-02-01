@@ -1,63 +1,104 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="../css/style.css">
-        <title>
-            PTB Consulting
-        </title>
-    </head>
-    <body>
-
-        <div id="navigation" class="top">
-            <div id="logo" class="top">
-                Logo here
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <title>PTB Consulting</title>
+</head>
+<body>
+    <!-- Navigation / Icon + Social Media Redirects -->
+    <div class="container-fluid">
+        <div class="row" id="navigation">
+            <div class="col-lg-6 col-md-4 col-sm-4 col-xs-4" id="consulting header">
+                <h2 class="text-center">Phoenix Treasure Box Consulting</h2>
             </div>
-            <div id="socialMedia" class="top">
-                Social Media Here
+            <div class="col-lg-2 col-md-4 col-sm-1 col-xs-0" id="spacer"></div>
+            <div class="col-md-4 col-sm-7 col-xs-8 text-right" id="socialMedia">
+                <div class="btn btn-primary">
+                    <i class="fab fa-facebook-f"> 
+                        Facebook
+                    </i>
+                </div>
+                <div class="btn btn-info">
+                    <i class="fab fa-instagram"> 
+                        Instagram
+                    </i>
+                </div>
+                <div class="btn btn-primary">
+                    <i class="fab fa-twitter"> 
+                        Twitter
+                    </i>
+                </div>
             </div>
         </div>
-
-        <div id="headline">
-            <h1>Phoenix Treasure Box Consulting</h1>
-            <h3 id="basicInfo">
-                Take the next big step for Wholesale and Amazon with help! </br> 
-                We are here with over 10 years of experience and expertise.
-                </br>
-                We take you step by step through every obsticle you will face and show you how to succeed
+    </div>
+    <!-- If screen is desktop or such, create a spacer div -->
+    <div class="col-md-12" style="height:50px;"></div>
+    <!-- Sign up -->
+    <div class="container-fluid">
+        <div class="row">
+            <h3 id="basicInfo" class="col-md-6">
+                    Take the next big step for Wholesale and Amazon with help! </br> 
+                    We are here with over 10 years of experience and expertise.</br>
+                    We take you step by step through every obsticle you will face and show you how to succeed!</br>
             </h3>
-            <!-- <div id="ctaButton">
-                <button>Contact Us</button>
-            </div> -->
-            <div id="form">
-                <form action="">
-                    <label for="name">Name</label>
-                    <input type="text" name="name" id="name" required="required">
-                    <label for="phone">Phone</label>
-                    <input type="text" name="phone" id="phone" required="required">
-                    <label for="email">Email</label>
-                    <input type="text" name="email" id="email" required="required">
-                    <label for="location">City</label>
-                    <input type="text" name="location" id="location" required="required">
-                    <label for="comments">Comments</label>
-                    <textarea name="comments" id="comments" rows="2" cols="20" required="required"></textarea>
-                    <input type="submit" name="submit" id="submit" value="submit">
+            <!-- Form -->
+            <div id="form" class="col-md-6">
+                <form action="../php/action_page.php">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name" required="required">
+                    </div>  
+                    <div class="form-group">
+                        <label for="phone">Phone:</label>
+                        <input type="number" name="phone" id="phone" required="required">
+                    </div>                          
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" required="required">
+                    </div>  
+                    <div class="form-group">
+                        <label for="location">City:</label>
+                        <input type="text" name="location" id="location" required="required">
+                    </div>  
+                    <div class="form-group">
+                            <label for="comments">Comments:</label>
+                            <textarea name="comments" id="comments" rows="2" cols="20" required="required"class="container-fluid"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary container-fluid">Submit</button>
                 </form>
             </div>
         </div>
-
-        <!-- <div id="why">
-            <div id="reasons1"><h3>Knowledge</h3></div>
-            <div id="reasons2"><h3></h3></div>
-            <div id="reasons3"></div>
-        </div> -->
-
-        <div id="screenshots">
-            <img src="..\img\atlBackgroundImg.jpg" alt="" class="images" id="img1">
-            <img src="..\img\beginningImg.jpg" alt="" class="images" id="img2">
-            <img src="..\img\happyImg.jpg" alt="" class="images" id="img3">
-            <img src="..\img\turtleImg.jpg" alt="" class="images" id="img4">
+    </div>
+    <!-- If screen is desktop or such, create a spacer div -->
+    <div class="col-md-12" style="height:50px;"></div>
+    <!-- Screenshots/Images -->
+    <div class="container-fluid" id="screenshots">
+        <div class="row">
+                <div class="col-md-3 col-sm-3">
+                    <img src="..\img\atlBackgroundImg.jpg" alt="" class="img-fluid" id="img1">
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <img src="..\img\beginningImg.jpg" alt="" class="img-fluid" id="img2">
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <img src="..\img\happyImg.jpg" alt="" class="img-fluid" id="img3">
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <img src="..\img\turtleImg.jpg" alt="" class="img-fluid" id="img4">
+                </div>
         </div>
-
-        <div id="features">
+    </div>
+    <!-- Pain points / Features -->
+    <div id="features">
             <!-- 6 main pain points we address -->
             <div class="featureBox1"></div>
             <div class="featureBox2"></div>
@@ -66,10 +107,17 @@
             <div class="featureBox5"></div>
             <div class="featureBox6"></div>
         </div>
-
+    <!-- Testimonials -->
         <div id="testimonials">
             <div id="testimonial1" class="praiseGiven">Here is where the testimonial will go</div>
             <div id="testimonial2" class="praiseGiven">Here is where the testimonial will go</div>
         </div>
-    </body>
+
+    <!-- Jquery.js -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <!-- Bootstrap.js -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
 </html>

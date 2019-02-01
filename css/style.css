@@ -1,67 +1,21 @@
-/* navigation */
-#navigation{
-    height: 30px;
-    width: 100%;
-}
-
-#logo{
-    height:30px;
-    width: 20%;
-    float: left;
-}
-
-#socialMedia{
-    height: 30px;
-    float: right;
-}
-
-/* main headline */
-#headline{
-    background: aqua;
-    height: 400px;
-    width: 100%;
-    margin: auto;
-    padding: 10px;
+/* div{
+    padding: 5px;
     border: 1px solid black
+} */
+
+.btn{
+    margin: 10px;
 }
 
-#basicInfo{
-    float: left;
-    width: 50%;
+/* #screenshots{
+    max-width: 100%;
+    height: auto;
+} */
+
+.container-fluid{
     border: 1px solid black
 }
 
 #form{
-    width: 40%;
-    float: right;
-
     border: 1px solid black
-
-}
-
-label{
-    display: block
-}
-
-/* images */
-
-#screenshots{
-    height:200px;
-    border: 1px solid black;
-}
-
-img{
-    max-height: 100%;
-    object-fit: cover;
-}
-
-/* testimonials */
-
-#testimonials{
-    display: flex;
-    padding: 10px;
-}
-
-.praiseGiven{
-    padding: 10px;
 }
